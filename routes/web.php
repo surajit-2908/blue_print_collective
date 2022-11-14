@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AuthController as AuthController;
 use App\Http\Controllers\Admin\DashboardController as DashboardController;
 use App\Http\Controllers\Admin\ProfileController as ProfileController;
 use App\Http\Controllers\Admin\FeedbackController as FeedbackController;
+use App\Http\Controllers\Admin\ContentController as ContentController;
 
 /*
 |--------------------------------------------------------------------------
