@@ -6,7 +6,6 @@
             <div class="category-list-hdn">
                 <h2>Edit Setting</h2>
                 <h3 class="create-cat">
-                    {{-- <a href="{{ route('admin.brand') }}">Back</a> --}}
                 </h3>
             </div>
 
@@ -15,30 +14,6 @@
                     enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <label>Vat <small class="text-danger">(in %)</small></label>
-                                <input type="number" name="vat" class="form-control"
-                                    value="{{ $dataArr['settings']->vat }}" min="0" step=".01" required="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <label>Shipping Charge <small class="text-danger">(in $)</small></label>
-                                <input type="number" name="shipping_charge" class="form-control"
-                                    value="{{ $dataArr['settings']->shipping_charge }}" min="0" step=".01"
-                                    required="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <label>Refund Charge <small class="text-danger">(in %)</small></label>
-                                <input type="number" name="refund_charge" class="form-control"
-                                    value="{{ $dataArr['settings']->refund_charge }}" min="0" step=".01"
-                                    required="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6"></div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label>Contact Email</label>
@@ -51,6 +26,13 @@
                                 <label>Contact Phone</label>
                                 <input type="text" name="contact_phone" class="form-control"
                                     value="{{ $dataArr['settings']->contact_phone }}" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label>Contact Website</label>
+                                <input type="text" name="contact_website" class="form-control"
+                                    value="{{ $dataArr['settings']->contact_website }}" required="">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12">

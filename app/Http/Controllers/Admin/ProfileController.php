@@ -61,18 +61,14 @@ class ProfileController extends BaseController
     public function updateSetting(Request $request, $id)
     {
         $this->validate($request, [
-            'vat' => 'required',
-            'shipping_charge' => 'required',
-            'refund_charge' => 'required',
+            'contact_website' => 'required',
             'contact_email' => 'required',
             'contact_phone' => 'required',
             'contact_address' => 'required',
         ]);
 
         Setting::find($id)->update([
-            "vat" => $request->vat,
-            "shipping_charge" => $request->shipping_charge,
-            "refund_charge" => $request->refund_charge,
+            "contact_website" => $request->contact_website,
             "contact_email" => $request->contact_email,
             "contact_phone" => $request->contact_phone,
             "contact_address" => $request->contact_address,

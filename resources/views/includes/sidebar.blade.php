@@ -24,12 +24,14 @@
             <li class="{{ request()->is('admin/dashboard*') ? 'active' : '' }}"><a
                     href="{{ route('admin.dashboard') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
             </li>
-
             <li class="{{ Route::is('admin.settings') ? 'active' : '' }}"><a href="{{ route('admin.settings') }}"><i
                         class="fa fa-gear"></i> <span>Settings</span></a>
             </li>
             <li class="{{ $controller_name == 'ContentController' ? 'active' : '' }}">
                 <a href="{{ route('admin.content') }}"><i class="fa fa-gear"></i> <span>Manage Content</span></a>
+            </li>
+            <li class="{{ $controller_name == 'FeedbackController' ? 'active' : '' }}"><a
+                    href="{{ route('admin.feedback') }}"><i class="fa fa-comments"></i> <span>Feedback</span></a>
             </li>
 
         </ul>
