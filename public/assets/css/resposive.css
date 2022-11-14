@@ -1,0 +1,501 @@
+@charset"utf-8";
+
+/*=========================== Responsive Style Sheet Start Here ===========================*/
+@media only screen and (min-width:1600px){
+
+}
+
+@media only screen and (max-width:1365px){
+
+}
+
+@media only screen and (max-width:1199px){
+	.cartPrdctTitleClmn{
+		width: 40%;
+	}
+}
+
+
+@media only screen and (max-width:991px){
+	.hideMob{
+		display: none;
+	}
+	.hdrSearch{
+		display: none;
+	}
+	.orderTrack{
+		display: none;
+	}
+	.hdrCartCount{
+		position: absolute;
+		z-index: 3;
+		top: -2px;
+		left: inherit;
+		right: -14px;
+	}
+	.mobLoginSearch{
+		display: block;
+		background-color: #ffffff;
+		padding: 10px 15px 10px 10px;
+	}
+	.mobLoginSearch ul{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.mobLoginSearch ul li{
+		position: relative;
+		margin-left: 25px;
+	}
+	.mobLoginSearch ul li:first-child{
+		margin-left: 0;
+	}
+	.mobLoginSearch ul li.mobSearchIcon{
+		margin: 0 0 0 30px;
+		padding: 5px;
+	}
+	.mobLoginSearch .orangeBtn{
+		font-size: 13px;
+		padding: 5px 10px;
+	}
+	.shipingReturn{
+		max-width: 300px;
+		margin: 0;
+	}
+	.shipingReturn ul{
+		text-align: left;
+	}
+	.headerMenu{
+		padding: 0;
+		border: none;
+	}
+	.homeBannerSec .bannerDiscountPic img{
+		max-width: 300px;
+	}
+	.diwaliSpecialBg img{
+		min-height: 200px;
+		object-fit: cover;
+	}
+	.dealsDiscountTextArea h4{
+		font-size: 30px;
+	}
+	.dealsDiscountTextArea h5{
+		font-size: 15px;
+	}
+	.dealsMiddleClm .dealsDiscountTextArea h4{
+		font-size: 45px;
+	}
+	.dealsMiddleClm .dealsDiscountTextArea h5{
+		font-size: 20px;
+	}
+	.signatureItem .signatureItemText{
+		padding: 10px;
+	}
+	.signatureItem .signatureItemText h4{
+		font-size: 13px;
+	}
+	.trendsItemArea .flxRow.spaceBet{
+		justify-content: flex-start;
+	}
+	.trendsItem{
+		width: 33%;
+	}
+	.trendsItemPicArea .trendItemView, .trendsItemPicArea .trendItemSize{
+		opacity: 1;
+	}
+	.trendsItemPicArea .trendItemSize ul{
+		justify-content: flex-start;
+	}
+	.footerSec{
+		padding-top: 30px;
+	}
+	.footerTopsec{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+		margin-bottom: 10px;
+	}
+	.footerTopsecl, .footerTopsecr{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.cartBodySec{
+		padding-bottom: 30px;
+	}
+	.cartBodyRow{
+		flex-direction: column;
+	}
+	.cartLeftPanel{
+		width: 100%;
+	}
+	.cartRightPanel{
+		width: auto;
+		max-width: 300px;
+		margin: 40px auto 0 auto;
+	}
+	.cartPrdctTitleClmn{
+		width: 55%;
+	}
+	.checkoutLeftClm{
+		width: 100%;
+	}
+	.checkoutRightClm{
+		width: 100%;
+	}
+	.checkoutInfoSec{
+		margin-bottom: 50px;
+	}
+	.prodDtlTopLeftArea{
+		width: 100%;
+	}
+	.prodDtlTopRightArea{
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+
+
+@media only screen and (max-width:767px){
+	.homeBannerSec .bannerDiscountPic img{
+		max-width: 150px;
+	}
+	.diwaliSpecialTextArea h2, .diwaliSpecialTextArea ul li h3{
+		font-size: 25px;
+	}
+	.dealsSec{
+		padding-top: 0;
+	}
+	.dealsSec .dFlx{
+		flex-direction: column;
+	}
+	.dealsClm, .dealsClm.dealsMiddleClm{
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	.signatureStyleSec .flxRow.spaceBet{
+		justify-content: flex-start;
+	}
+	.signatureItem{
+		width: 33%;
+		margin-top: 15px;
+	}
+	.latestTrendsSec{
+		padding: 30px 0;
+	}
+	.trendsItem{
+		width: 50%;
+	}
+	.reviewSec ul{
+		flex-wrap: wrap;
+	}
+	.reviewSec ul li{
+		width: 48%;
+		margin-top: 25px;
+	}
+	.reviewSec ul li img{
+		width: auto;
+		max-height: 300px;
+		object-fit: cover;
+	}
+	.instaSec ul{
+		flex-wrap: wrap;
+	}
+	.instaSec ul li{
+		width: 32%;
+		margin: 5px 2px;
+	}
+	.instaSec ul li img{
+		max-height: 130px;
+		object-fit: cover;
+		object-position: top;
+	}
+	.instaSec ul li .instaIcon{
+		top: 0;
+		line-height: 130px;
+		display: block;
+	}
+	.instaSec ul li .instaIcon .fa{
+		font-size: 30px;
+		color: #ffffff;
+	}
+	.footerMidsec{
+		flex-wrap: wrap;
+	}
+	.flxCol{
+		width: 48%;
+		margin-top: 30px;
+	}
+	.flxCol ul li a{
+		padding: 3px 0;
+	}
+	.footerlist ul{
+		flex-wrap: wrap;
+	}
+	.footerlist ul li{
+		margin: 15px 0;
+		width: 48%;
+	}
+	.footerBottomSec .dFlex{
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.footerBottomSec .dFlex p{
+		order: 2;
+		text-align: center;
+		margin-top: 10px;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.modal.show .modal-dialog{
+		width: 80%;
+		max-width: 80%;
+	}
+	.inrTitle{
+		font-size: 30px;
+	}
+	.cartBodySec{
+		padding-top: 0;
+	}
+	.cartProdRowTh, .cartProdRowTh .cartProdClmTh{
+		display: none !important;
+	}
+	.cartProdRow{
+		position: relative;
+		justify-content: space-between;
+	}
+	.cartPrdctTitleClmn{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.cartPrdctQuantityClmn{
+		width: 60%;
+	}
+	.cartPrdctQuantityClmn .cartPrdctQuantityBox{
+		max-width: 130px;
+	}
+	.cartPrdctPriceClmn{
+		width: auto;
+		text-align: right;
+	}
+	.cartLeftPanel .cartPrdctPriceClmn{
+		padding-left: 8px;
+	}
+	.cartPrdctPriceClmn:after{
+		left: inherit;
+		right: 100%;
+	}
+	.cartPrdctRemoveClmn{
+		position: absolute !important;
+		width: 25px;
+		height: 25px;
+		background-color: #ff4f2c;
+		border-radius: 100%;
+		line-height: 22px;
+		color: #ffffff;
+		top: -10px;
+		right: -5px;
+	}
+	.cartPrdctRemoveClmn a, .cartPrdctRemoveClmn button{
+		font-size: 18px;
+		color: #ffffff;
+	}
+	.aditionalComntArea{
+		margin-top: 35px;
+	}
+
+}
+
+
+@media only screen and (max-width:575px){
+	.secHdn, .instaSec h2{
+		font-size: 30px;
+	}
+	.signatureItem{
+		width: 50%;
+	}
+	.reviewSec h2{
+		font-size: 30px;
+		padding-bottom: 10px;
+	}
+	.cartRightPanel{
+		width: 100%;
+		max-width: 100%;
+		margin: 40px 0 0 0;
+	}
+	.checkoutInfoHdn h2{
+		font-size: 20px;
+	}
+	.prodDtlsTab .nav li{
+		font-size: 15px;
+		margin-left: 5px;
+	}
+	.prodDtlTitle, .prodDtlReviewHdnArea h2, .recomndProdArea h2{
+		font-size: 30px;
+		letter-spacing: 0;
+	}
+	.prodDtlsTab .nav li a{
+		padding: 7px 15px;
+	}
+	.recomndProdArea, .prodDtlReviewSec, .prodDtlsTab{
+		padding: 30px 0;
+	}
+}
+
+
+
+@media only screen and (max-width:479px){
+	.shipingReturn ul li{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	.shipingReturn ul li:not(:first-child):after{
+		left: -10px;
+	}
+	.mobLoginSearch ul li{
+		margin-left: 15px;
+	}
+	.mobLoginSearch .orangeBtn{
+		font-size: 12px;
+		padding: 3px 8px;
+	}
+	.mobLoginSearch ul li.mobSearchIcon{
+		margin: 0 0 0 22px;
+	}
+	.homeBannerSec .bannerDiscountPic img{
+		max-width: 120px;
+	}
+	.bannerBottomBox a{
+		width: 40px;
+		height: 40px;
+		line-height: 36px;
+	}
+	.bannerBottomBox a img{
+		max-width: 20px;
+	}
+	.diwaliSpecialBg img{
+		min-height: 130px;
+	}
+	.diwaliSpecialTextArea h2, .diwaliSpecialTextArea ul li h3{
+		font-size: 15px;
+		font-weight: 700;
+	}
+	.diwaliSpecialTextArea ul li p{
+		font-size: 12px;
+	}
+	.diwaliSpecialTextArea ul li{
+		margin: 0 15px;
+	}
+	.secHdn{
+		margin-bottom: 20px;
+	}
+	.secHdn, .instaSec h2, .reviewSec h2{
+		font-size: 25px;
+	}
+	.trendsItem{
+		width: 100%;
+	}
+	.reviewSec ul li{
+		width: 100%;
+		margin: 25px 0 0 0;
+	}
+	.footerTopsecl h3{
+		font-size: 25px;
+	}
+	.footerTopsecr .submitBtn{
+		font-size: 14px;
+		padding: 8px 15px;
+		top: 7px;
+	}
+	.footerlist ul li{
+		text-align: center;
+	}
+	.footerlist ul li span{
+		display: block;
+		margin: 0 0 8px 0;
+	}
+	.footerBottomSec img{
+		max-width: 150px;
+	}
+	.inrTitle{
+		font-size: 25px;
+	}
+	.formHalfClm, .formThreeClm{
+		width: 100%;
+	}
+	.formThreeClm .selectField select{
+		background-position: 97% center;
+	}
+	.prodDtlInfoQuantityRow ul li:not(:first-child){
+		margin-left: 10px;
+	}
+	.prodDtlInfoBtn a{
+		margin-right: 10px;
+	}
+	.orangeBtn, .lightOrangeBtn{
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+	.prodDtlInfoSizeList li{
+		margin-bottom: 8px;
+	}
+	.prodDtlInfoQuantityRow ul li .cartPrdctQuantityBox button{
+		width: 35px;
+	}
+	.prodDtlInfoQuantityRow ul li .cartPrdctQuantityBox input{
+		width: 40px;
+	}
+	.prodDtlsTab .nav li, .prodDtlsTab .nav li a{
+		width: 100%;
+	}
+	.prodDtlsTab .nav li{
+		margin-bottom: 8px;
+	}
+	.prodDtlsTab .nav li a{
+		border-radius: 6px !important;
+		text-align: center;
+	}
+	.prodDtlReviewHdnArea h2{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.prodDtlTitle, .prodDtlReviewHdnArea h2{
+		font-size: 25px;
+	}
+	.recomndProdArea h2{
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+}
+
+
+@media only screen and (max-width:359px){
+	.shipingReturn ul li{
+		font-size: 11px;
+		margin-left: 6px;
+	}
+	.shipingReturn ul li:not(:first-child):after{
+		left: -8px;
+	}
+	.mobLoginSearch .orangeBtn{
+		letter-spacing: 0;
+	}
+	.mobLoginSearch ul li.mobSearchIcon{
+		margin: 0 0 0 18px;
+	}
+	.homeBannerSec .bannerDiscountPic img{
+		max-width: 100px;
+	}
+	.footerTopsecl h3{
+		font-size: 20px;
+	}
+	.footerBottomSec img{
+		max-width: 120px;
+	}
+	.footerBottomSec .dFlex p{
+		font-size: 13px;
+	}
+	.giftCouponSec .formField{
+		width: 65%;
+	}
+}
+/*=========================== Responsive Style Sheet End Here ===========================*/
