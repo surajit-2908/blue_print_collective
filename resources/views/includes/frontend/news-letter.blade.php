@@ -14,10 +14,18 @@
                         giveaways, and events!
                     </p>
 
-                    <form>
-                        <input type="text" name="" class="newsLetterTextField" placeholder="Enter your email" />
+                    <form id="footer-form" action="javascript:void(0)">
+                        <input type="email" name="email" id="footer-email" class="newsLetterTextField"
+                            placeholder="Enter your email" />
 
-                        <input type="submit" name="" class="newsLetterSubscribeBtn" value="Subscribe" />
+                        <input type="submit" id="submit-footer-form" class="newsLetterSubscribeBtn"
+                            value="Subscribe" />
+                        <input type="button" id="footer-form-loader" class="newsLetterSubscribeBtn d-none"
+                            value="Subscribing..." />
+                        <span class="text-danger d-none" id="footer-email-err">Please provide a valid email
+                            address</span>
+                        <span class="text-success d-none" id="footer-email-suc">Successfully added to our mailing
+                            list</span>
                     </form>
 
                     <p class="privacyText">

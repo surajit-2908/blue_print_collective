@@ -70,6 +70,38 @@
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#submit-footer-form").on("click", function() {
+                ValidateEmail($("#footer-email").val());
+            })
+        })
+
+        function ValidateEmail(email) {
+
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            if (!filter.test(email)) {
+                $('#footer-email-err').removeClass('d-none');
+                email.focus;
+                return false;
+            } else {
+                $('#footer-email-err').addClass('d-none');
+                $('#submit-footer-form').addClass('d-none');
+                $('#footer-form-loader').removeClass('d-none');
+                setTimeout(function() {
+                    $('#submit-footer-form').removeClass('d-none');
+                    $('#footer-form-loader').addClass('d-none');
+                    $('#footer-email-suc').removeClass('d-none');
+                    $("#footer-email").val("");
+                    setTimeout(function() {
+                        $('#footer-email-suc').addClass('d-none');
+                    }, 4000);
+                }, 4000);
+            }
+        }
+    </script>
     @stack('scripts')
 </body>
 
