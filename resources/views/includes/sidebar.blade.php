@@ -25,12 +25,12 @@
                     href="{{ route('admin.dashboard') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
             </li>
 
-            <li class="{{ Route::is('admin.settings') ? 'active' : '' }}"><a href="{{ route('admin.settings') }}"><i
+            {{-- <li class="{{ Route::is('admin.settings') ? 'active' : '' }}"><a href="{{ route('admin.settings') }}"><i
                         class="fa fa-gear"></i> <span>Settings</span></a>
             </li>
             <li class="{{ $controller_name == 'ContentController' ? 'active' : '' }}">
                 <a href="{{ route('admin.content') }}"><i class="fa fa-gear"></i> <span>Manage Content</span></a>
-            </li>
+            </li> --}}
 
         </ul>
     </div>
