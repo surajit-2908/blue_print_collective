@@ -18,7 +18,7 @@
                             <div class="w45">
                                 <input type="text" name="fname" class="formControl" placeholder="First name">
                             </div>
-                            <div class="w45">
+                            <div class="w45 mob20">
                                 <input type="text" name="lname" class="formControl" placeholder="Last name">
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                             <div class="w45">
                                 <input type="email" name="email" class="formControl" placeholder="Email address">
                             </div>
-                            <div class="w45">
+                            <div class="w45 mob20">
                                 <input type="text" name="phone" class="formControl" placeholder="Phone number">
                             </div>
                         </div>

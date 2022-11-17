@@ -906,7 +906,7 @@ body.body-fixed{
 
 .mainHeader .searchIcon{
 
-  margin-left: 40px;
+  margin-left: 25px;
 
 }
 
@@ -960,7 +960,7 @@ body.body-fixed{
 
   top: 60%;
 
-  z-index: 2;
+  /* z-index: 2; */
 
   transform: translateY(-50%);
 
@@ -1036,7 +1036,7 @@ body.body-fixed{
 
   position: relative;
 
-  padding: 80px 0 300px 0;
+  padding: 80px 0 50px 0;
 
 }
 
@@ -1340,7 +1340,7 @@ body.body-fixed{
 
   border-radius: 100%;
 
-  top: 8px;
+  top: 6px;
 
   left: 0;
 
@@ -1715,6 +1715,7 @@ body.body-fixed{
   position: relative;
 
   margin-top: -175px;
+  z-index: 9;
 
 }
 
@@ -1759,47 +1760,34 @@ body.body-fixed{
 }
 
 .newsLetterLeftTextArea form{
-
+  width: 90%;
   margin: 35px 0 30px 0;
+  position: relative;
 
 }
 
 .newsLetterLeftTextArea .newsLetterTextField{
-
-  width: 75%;
-
+  width: 100%;
   border: none;
-
   background-color: #ffffff;
-
-  border-radius: 6px 0 0 6px;
-
+  border-radius: 6px;
   height: 50px;
-
   padding: 10px 20px;
-
   font-size: 14px;
-
 }
 
 .newsLetterLeftTextArea .newsLetterSubscribeBtn{
-
-  width: 22%;
-
   height: 50px;
-
   border: none;
-
   background-color: #0791af;
-
   border-radius: 0 6px 6px 0;
-
   font-size: 15px;
-
   color: #ffffff;
-
   margin: 0 0 0 -6px;
-
+  position: absolute;
+  padding: 0 15px;
+  right: 0;
+  top: 0;
 }
 
 .newsLetterLeftTextArea p.privacyText{
@@ -1972,7 +1960,7 @@ body.body-fixed{
 
   position: relative;
 
-  padding: 60px 0 250px 0;
+  padding: 60px 0 150px 0;
 
 }
 
@@ -2234,7 +2222,7 @@ font-size: 14px; font-weight: bold; content: '\f107'; }
 
 /*Hamburger Style*/
 
-.navbar-toggler{ width: 30px; height: 22px; /*position: absolute; top: 0; right: 20px; margin: 5px 0 0 0;*/ cursor: pointer; background-color: transparent; border: 0; outline: none; z-index: 3;
+.navbar-toggler{ width: 25px; height: 22px; /*position: absolute; top: 0; right: 20px; margin: 5px 0 0 0;*/ cursor: pointer; background-color: transparent; border: 0; outline: none; z-index: 9;
 
 -webkit-transform: rotate(0deg);
 
@@ -2273,12 +2261,13 @@ transform: rotate(0deg);
 transition: .25s ease-in-out; }
 
 .navbar-toggler span{ background: #ffffff; }
+.innerHeader .navbar-toggler span{ background: #000; }
 
 .navbar-toggler span:nth-child(1){ top: 0px; }
 
-.navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3){ top: 6px; width: 70%; right: 0; left: inherit; }
+.navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3){ top: 7px; width: 70%; right: 0; left: inherit; }
 
-.navbar-toggler span:nth-child(4){ top: 12px; }
+.navbar-toggler span:nth-child(4){ top: 14px; }
 
 .navbar-toggler.open span:nth-child(1){ top: 11px; width: 0%; left: 50%; }
 
@@ -2366,7 +2355,7 @@ transform: rotate(-45deg); }
 
 @media only screen and (max-width: 991px) {
 
-  .navbar-nav{ float: none; }
+  .navbar-nav{ float: none; margin-top: 5px;}
 
   .navbar-nav li, .dropdown-menu li{ text-align: left; border-bottom: 1px solid #6f6f6f; margin: 0; font-weight: normal; white-space: nowrap; }
 
@@ -2390,7 +2379,7 @@ transform: rotate(-45deg); }
 
   .dropdown-toggle::after{ display: none; top: 50%; right: 18px; margin-top: -12px; font-size: 16px; }
 
-  .navbar-toggler{ padding: 7px; }
+  .navbar-toggler{ padding: 7px; margin-top: 10px;}
 
   .dropdown > a.dropdown-toggle{
 
@@ -2436,7 +2425,7 @@ transform: rotate(-45deg); }
 
   	padding: 0 0 50px 0;
 
-  	position: absolute;
+  	position: fixed;
 
   	top: 0;
 
@@ -2455,6 +2444,7 @@ transform: rotate(-45deg); }
   	-o-transition: .2s ease-in-out;
 
   	transition: .2s ease-in-out;
+    margin-top: -0;
 
   }
 
@@ -2478,7 +2468,7 @@ transform: rotate(-45deg); }
 
   .headerMenu.show-nav nav.navbar {
 
-    width: 85%;
+    width: 75%;
 
   }
 
@@ -2547,17 +2537,17 @@ transform: rotate(-45deg); }
   color: #fcc108;
 }
 
-.homBodyComnSec .middleTextArea ul.serviceList li{
+ul.serviceList li{
   position: relative;
   font-size: 14px;
   margin-top: 10px;
   padding-left: 17px;
   line-height: 20px;
 }
-.homBodyComnSec .middleTextArea ul.serviceList li:before{
+ul.serviceList li:before{
   display: none;  
 }
-.homBodyComnSec .middleTextArea ul.serviceList li:after{
+ul.serviceList li:after{
   position: absolute;
   content: "";
   top: 6px;
@@ -2567,21 +2557,21 @@ transform: rotate(-45deg); }
   border-radius: 100%;
   background: #0792b0;  
 }
-.homBodyComnSec .middleTextArea ol.serviceListOl{
+ol.serviceListOl{
   margin-left: 15px;
 }
-.homBodyComnSec .middleTextArea ol.serviceListOl li{
+ol.serviceListOl li{
   font-size: 14px;
   color: #515151;
 }
-.homBodyComnSec .middleTextArea ol.serviceListOl li{
+ol.serviceListOl li{
   position: relative;
   font-size: 14px;
   margin-top: 10px;
   padding-left: 27px;
   line-height: 20px;
 }
-.homBodyComnSec .middleTextArea ol.serviceListOl li:after{
+ol.serviceListOl li:after{
   position: absolute;
   content: "";
   top: 4px;
@@ -2669,6 +2659,7 @@ transform: rotate(-45deg); }
 .contactMain .dflex{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contactMain .dlcol{
   width: 55%;
@@ -2795,4 +2786,14 @@ transform: rotate(-45deg); }
   font-weight: normal;
   font-size: 20px;
   color: #0791af !important;
+}
+
+.webCol{
+  display: block;
+}
+.mobCol{
+  display: none;
+}
+.pb20{
+  padding-bottom: 20px;
 }
