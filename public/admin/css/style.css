@@ -32,9 +32,9 @@
     --secondary-color: #00589e;
     --tertiary-color: #202121;
     --toggle-color: #e3f2fd;
-    --red-color: #d80200;
+    --red-color: #f43432;
     --anker-color: #0c9cfd;
-    --pink-color: #d50b3b;
+    --pink-color: #fcc108;
     --very-soft-pink-color: #fdd7e3;
     --soft-pink-color: #fc8ea8;
     --deep-pink-color: #e50486;
@@ -137,22 +137,22 @@ select:hover {
 }
 
 input:required {
-    border-color: #000;
+    border-color: #007bff;
     /* border-color: var(--deep-pink-color); */
     border-width: 1px;
-    box-shadow: 0 0 0 0.2rem rgba(94, 176, 253, .15);
+    box-shadow: 0 0 0 0.1rem rgba(22, 104, 181, .15);
 }
 
 select:required {
     border-color: #000;
     border-width: 1px;
-    box-shadow: 0 0 0 0.2rem rgba(94, 176, 253, .15);
+    box-shadow: 0 0 0 0.1rem rgba(22, 104, 181, .15);
 }
 
 textarea:required {
     border-color: #000;
     border-width: 1px;
-    box-shadow: 0 0 0 0.2rem rgba(94, 176, 253, .15);
+    box-shadow: 0 0 0 0.1rem rgba(22, 104, 181, .15);
 }
 
 select {
@@ -171,7 +171,7 @@ a {
     text-decoration: none;
     border: none;
     outline: 0;
-    color: var(--pink-color);
+    color: #fcc108;
 }
 
 a:hover {
@@ -402,7 +402,7 @@ p {
     height: 100vh;
     top: 0;
     left: 0;
-    background: #000;
+    background: #0791af;
     /* border-radius: 0 40px 40px 0; */
     box-shadow: 7px 0 60px rgba(0, 0, 0, 0.05);
     overflow: hidden;
@@ -463,7 +463,7 @@ p {
     content: "";
     width: 0;
     height: 100%;
-    background: var(--pink-color);
+    background: #fcc108;
     border-radius: 0 30px 30px 0;
     left: 0;
     top: 0;
@@ -1737,15 +1737,15 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.23); */
 }
 
 .datatable .dataTables_paginate .pagination li.active .page-link {
-    background-color: #d50b3b;
+    background-color: #fcc108;
     color: var(--primary-color);
-    border: 1px solid var(--pink-color);
+    border: 1px solid #fcc108;
 }
 
 .datatable .dataTables_paginate .pagination li:hover .page-link {
-    background-color: #d50b3b;
+    background-color: #fcc108;
     color: var(--primary-color);
-    border: 1px solid var(--pink-color);
+    border: 1px solid #fcc108;
 }
 
 /*=========================== Category List Body Style End ===========================*/
@@ -2216,7 +2216,7 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.23); */
 }
 
 .category-submit button.submit-btn {
-    background: #b5ccd4;
+    background: var(--pink-color);
 }
 
 .category-submit button.cancel-btn:hover {
@@ -2238,10 +2238,10 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.23); */
 }
 
 .subbtn {
-    background: #000;
+    background: var(--pink-color);
     padding: 10px 25px;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
 }
 
 .subbtn:hover {
@@ -2740,7 +2740,7 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 .login-form-bg h1 span {
-    color: #d50b3b;
+    color: #0791af;
 }
 
 .login-form-bg form {
@@ -2774,10 +2774,10 @@ div.dataTables_wrapper div.dataTables_length select {
     width: auto;
     height: auto;
     padding: 15px 60px 15px 60px;
-    background: #d50b3b;
+    background: #fcc108;
     border: none;
     font-size: 15px;
-    color: #fff;
+    color: #000;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -3728,7 +3728,7 @@ a.texteditor:hover {
 }
 
 .noti-pop-hdn {
-    background-color: #e5f8ff;
+    background-color: #0791af;
     padding: 25px 30px;
 }
 
@@ -3931,8 +3931,8 @@ input:checked+.slider:before {
 
 .views {
     color: #fff;
-    background-color: #366c06;
-    border-color: #366c06;
+    background-color: #6ed414;
+    border-color: #6ed414;
     padding: 2px 6px;
     font-size: 14px;
     line-height: 1.5;
@@ -4835,4 +4835,11 @@ input:checked+.slider:before {
 .text-info {
     color: #17a2b8!important;
     font-size: 0.8rem;
+}
+div.dataTables_wrapper div.dataTables_length select {
+    /* background: #17a2b8; */
+    color: var(--pink-color);
+}
+.form-control:focus {
+    box-shadow: none !important;
 }

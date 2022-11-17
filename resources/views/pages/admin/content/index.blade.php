@@ -26,17 +26,17 @@
 
                             <tbody>
                                 <tr>
-                                    <td title="Page / Section">Testimonial</td>
+                                    <td title="Page / Section">Home Page</td>
                                     <td title="Manage">
-                                        <a href="{{ route('admin.testimonial') }}" title="Mange">
+                                        <a href="{{ route('admin.content.listing', 'home') }}" title="Mange">
                                             <i class="fa fa-external-link views"></i>
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td title="Page / Section">Home Page</td>
+                                    <td title="Page / Section">Service Page</td>
                                     <td title="Manage">
-                                        <a href="{{ route('admin.content.listing', 'home') }}" title="Mange">
+                                        <a href="{{ route('admin.content.listing', 'service') }}" title="Mange">
                                             <i class="fa fa-external-link views"></i>
                                         </a>
                                     </td>

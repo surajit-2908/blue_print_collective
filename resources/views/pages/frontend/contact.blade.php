@@ -3,6 +3,8 @@
     <!--========================= Contact Section =========================-->
 
     <div class="contactMain">
+        @include('includes.frontend.message')
+        @include('includes.err-msg')
         <div class="container">
             <div class="dflex">
                 <div class="dlcol">
@@ -10,29 +12,30 @@
                     <p>You may reach us directly via using the contact details provided below.
                         Alternatively, you may complete the form below and someone from our team
                         will contact you shortly.</p>
-                    <form class="formGroup">
+                    <form action="{{ route('save.contact') }}" class="formGroup" method="post" id="myform">
+                        @csrf
                         <div class="dflex mb20">
                             <div class="w45">
-                                <input type="text" name="" class="formControl" placeholder="First name">
+                                <input type="text" name="fname" class="formControl" placeholder="First name">
                             </div>
-                            <div class="w45">
-                                <input type="text" name="" class="formControl" placeholder="Last name">
+                            <div class="w45 mob20">
+                                <input type="text" name="lname" class="formControl" placeholder="Last name">
                             </div>
                         </div>
 
                         <div class="dflex mb20">
                             <div class="w45">
-                                <input type="text" name="" class="formControl" placeholder="Email address">
+                                <input type="email" name="email" class="formControl" placeholder="Email address">
                             </div>
-                            <div class="w45">
-                                <input type="text" name="" class="formControl" placeholder="Phone number">
+                            <div class="w45 mob20">
+                                <input type="text" name="phone" class="formControl" placeholder="Phone number">
                             </div>
                         </div>
                         <div class="dflex mb20">
-                            <textarea class="formControl hit120" placeholder="Tell us about your sales inquiry..."></textarea>
+                            <textarea name="msg" class="formControl hit120" placeholder="Tell us about your sales inquiry..."></textarea>
                         </div>
                         <div class="dflex">
-                            <input type="submit" name="" class="sendBtn" value="Send request">
+                            <input type="submit" class="sendBtn" value="Send request">
                         </div>
 
                     </form>
@@ -43,20 +46,19 @@
 
                     <div class="webSec">
                         <h4>Website</h4>
-                        <p>www.myblueprintcollective.com</p>
+                        <p>{{ $setting->contact_website }}</p>
                     </div>
                     <div class="emailSec">
                         <h4>Email</h4>
-                        <p>info@myblueprintcollective.com</p>
+                        <p>{{ $setting->contact_email }}</p>
                     </div>
                     <div class="phoneSec">
                         <h4>Phone</h4>
-                        <p>7182887616</p>
+                        <p>{{ $setting->contact_phone }}</p>
                     </div>
                     <div class="addressSec">
                         <h4>Address</h4>
-                        <p>10 Bank Street Suite 560</br>
-                            White Plains, NY 10606</p>
+                        <p>{{ $setting->contact_address }}</p>
                     </div>
 
 
@@ -65,3 +67,46 @@
         </div>
     </div>
 @stop
+
+@push('scripts')
+    <script>
+        $("#myform").validate({
+            rules: {
+                fname: {
+                    required: true,
+                },
+                lname: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                phone: {
+                    required: true,
+                    number: true,
+                    minlength: 10,
+                    maxlength: 11
+                },
+                msg: {
+                    required: true,
+                },
+            },
+            messages: {
+                fname: "Please enter first name",
+                lname: "Please enter last name",
+                email: "Please enter a valid email address",
+                phone: {
+                    required: "Please enter your phone number",
+                    number: "Please enter a valid phone number",
+                    minlength: "Please enter a valid phone number",
+                    maxlength: "Please enter a valid phone number",
+                },
+                msg: "Please enter description",
+            },
+            submitHandler: function(form) {
+                form.submit();
+            }
+        });
+    </script>
+@endpush
