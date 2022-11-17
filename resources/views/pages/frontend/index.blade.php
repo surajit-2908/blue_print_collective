@@ -73,8 +73,8 @@
                         coaching to programs, school istricts & professional networks. We serve in communities across the
                         world and work with teams to innovate, tailor and dramatically improve models of learning through
                         high quality professional development and coaching.</p>
-                    <p><a href="#">About Blueprint Collective <img src="{{ asset('assets/images/about-arrow2.png') }}"
-                                alt=""></a>
+                    <p><a href="{{ route('about') }}">About Blueprint Collective <img
+                                src="{{ asset('assets/images/about-arrow2.png') }}" alt=""></a>
                     </p>
                 </div>
 
@@ -193,7 +193,7 @@
                                                     src="{{ asset('assets/images/home-img3.png') }}" loading="lazy"
                                                     width="206" alt="" class="image" /></div>
                                             <!-- <div class="content-image _30"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92895f99a1141f_barr-76.png')}}" loading="lazy" width="206" alt="" class="image" /></div>
-                                                    <div class="content-image _28"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289c714a1141b_barr-72.png')}}" loading="lazy" width="206" alt="" class="image" /></div> -->
+                                                        <div class="content-image _28"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289c714a1141b_barr-72.png')}}" loading="lazy" width="206" alt="" class="image" /></div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -258,9 +258,9 @@
                                                     src="{{ asset('assets/images/resources-img4.png') }}" loading="lazy"
                                                     width="280" alt="" class="image" /></div>
                                             <!-- <div class="content-image _10"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92899bb6a1143d_barr-101.png')}}" loading="lazy" width="242" alt="" class="image" /></div>
-                                                    <div class="content-image _9"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b3e2a11447_barr-99.png')}}" loading="lazy" width="280" alt="" class="image" /></div>
-                                                    <div class="content-image _12"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92891d0aa1146d_nick-fewings-zF_pTLx_Dkg-unsplash.png')}}" loading="lazy" width="156" alt="" class="image" /></div>
-                                                    <div class="content-image _13"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b0e4a11441_barr-100.png')}}" loading="lazy" width="156" alt="" class="image" /></div> -->
+                                                        <div class="content-image _9"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b3e2a11447_barr-99.png')}}" loading="lazy" width="280" alt="" class="image" /></div>
+                                                        <div class="content-image _12"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92891d0aa1146d_nick-fewings-zF_pTLx_Dkg-unsplash.png')}}" loading="lazy" width="156" alt="" class="image" /></div>
+                                                        <div class="content-image _13"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b0e4a11441_barr-100.png')}}" loading="lazy" width="156" alt="" class="image" /></div> -->
                                         </div>
                                     </div>
                                 </div>
