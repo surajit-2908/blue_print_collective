@@ -41,7 +41,7 @@
 
 <body>
     <div class="page-wrapper">
-        @stack("left-bar")
+        @stack('left-bar')
         @include('includes.frontend.header')
 
         @yield('content')
@@ -53,6 +53,32 @@
         @include('includes.frontend.footer')
     </div>
 
+    <!-- Search Modal -->
+
+    <div class="searchModal modal fade" id="headerSearchModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                    <img src="{{ asset('assets/images/close-icon.png') }}" alt="">
+
+                </button>
+
+                <div class="modal-body">
+
+                    Search here...
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="{{ asset('assets/js/jquery-3.5.1.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('assets/js/scripts.js') }}" type="text/javascript"></script>
