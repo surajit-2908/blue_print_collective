@@ -211,7 +211,7 @@
 
         <div class="yellow-sections-wrapper main-nav-section">
             <div id="yellow-sections" class="main-section-anchor"></div>
-            <section data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3a4" class="section z-11">
+            <section class="section z-11">
                 <div class="cover bg-yellow"></div>
                 <div data-w-id="a1ef182e-2ea5-b368-2864-44e1356e5d4d" class="animation-wrapper p-100">
                     <div class="sticky-wrap">
