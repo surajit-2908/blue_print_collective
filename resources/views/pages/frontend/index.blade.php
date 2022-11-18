@@ -150,7 +150,7 @@
 
         <div data-w-id="acbc92d8-a872-bb0e-1cbe-5ca64178cc4d" class="gray-sections-wrapper main-nav-section">
             <div id="gray-sections" class="main-section-anchor"></div>
-            <section data-w-id="8ec429b0-28a1-767c-7392-27468f62d610" class="section z-13">
+            <section class="section z-13">
                 <div class="cover bg-warm-gray"></div>
                 <div data-w-id="f5bc682c-560e-070e-dbd5-24bd0b0444bf" class="animation-wrapper bg-warm-gray p-100">
                     <div class="sticky-wrap">
