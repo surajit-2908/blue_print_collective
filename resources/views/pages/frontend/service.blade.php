@@ -300,7 +300,7 @@
 
         <div class="yellow-sections-wrapper main-nav-section minus-m-t">
             <div id="yellow-sections-deep" class="main-section-anchor"></div>
-            <section data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3a4" class="section z-13">
+            <section class="section z-13">
                 <div class="top-image-wrapper"><img
                         src="{{ asset('assets/images/personal-performence-dev-before-pic.png') }}" loading="lazy"
                         alt="" class="top-image" />
