@@ -9,7 +9,7 @@
                     <div class="state-num">01</div>
                     <div class="docked-content">
                         <div style="background-color:rgb(38,32,83)" class="dicked-line"></div>
-                        <div class="docked-pr">High Quality Curriculam Adaption & Implementation</div>
+                        <div class="docked-pr">High Quality Curriculam Adaption & Implementation to succeed in life</div>
                     </div>
                 </a>
                 <a href="#gray-sections" style="color:rgb(38,32,83)" class="docked-dp w-inline-block">
