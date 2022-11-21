@@ -345,8 +345,8 @@ function readURL(input) {
                 $('#showImg')
                 .attr('src', e.target.result);
             };
-            $('.show-img').show();
 
             reader.readAsDataURL(input.files[0]);
+            $('.show-img').show();
         }
     }

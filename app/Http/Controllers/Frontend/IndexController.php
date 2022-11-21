@@ -6,6 +6,8 @@ use App\Http\Controllers\BaseController as BaseController;
 use Symfony\Component\HttpFoundation\Request;
 use App\Models\Setting;
 use App\Models\ContactUs;
+use App\Models\Content;
+use App\Models\AboutTag;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactEmail;
 
@@ -18,7 +20,9 @@ class IndexController extends BaseController
      */
     public function index()
     {
-        return view('pages.frontend.index');
+        $content = Content::where('page', 'home')->get();
+        $contentArr = $this->contentModify($content);
+        return view('pages.frontend.index', compact('contentArr'));
     }
 
     /**
@@ -27,7 +31,9 @@ class IndexController extends BaseController
      */
     public function service()
     {
-        return view('pages.frontend.service');
+        $content = Content::where('page', 'service')->get();
+        $contentArr = $this->contentModify($content);
+        return view('pages.frontend.service', compact('contentArr'));
     }
 
     /**
@@ -36,7 +42,10 @@ class IndexController extends BaseController
      */
     public function about()
     {
-        return view('pages.frontend.about');
+        $tags = AboutTag::orderByDesc('id')->get();
+        $content = Content::where('page', 'about')->get();
+        $contentArr = $this->contentModify($content);
+        return view('pages.frontend.about', compact('contentArr','tags'));
     }
 
     /**
@@ -46,7 +55,9 @@ class IndexController extends BaseController
     public function contact()
     {
         $setting = Setting::first();
-        return view('pages.frontend.contact', compact('setting'));
+        $content = Content::where('page', 'contact')->get();
+        $contentArr = $this->contentModify($content);
+        return view('pages.frontend.contact', compact('setting', 'contentArr'));
     }
 
     /**
@@ -84,5 +95,19 @@ class IndexController extends BaseController
                 "msg" => "Your message has been sent successfully."
             ]
         ]);
+    }
+
+    /**
+     * content modify to array
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @return \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory
+     */
+    public function contentModify($contents)
+    {
+        $contentArr = [];
+        foreach ($contents as $content) {
+            $contentArr[$content->position] = $content->content;
+        }
+        return $contentArr;
     }
 }

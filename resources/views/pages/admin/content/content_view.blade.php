@@ -19,9 +19,6 @@
 
                             <thead>
                                 <tr>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Sub Title</th>
                                     <th>Position</th>
                                     <th>Action</th>
                                 </tr>
@@ -30,18 +27,8 @@
                             <tbody>
                                 @foreach ($dataArr['contentArr'] as $content)
                                     <tr>
-                                        <td title="Image">
-                                            @if ($content->image)
-                                                <img src="{{ asset('storage/content_image') . '/' . $content->image }}"
-                                                    alt="" class="bnr-img">
-                                            @else
-                                                -----
-                                            @endif
-                                        </td>
-                                        <td title="Title">{{ $content->title ? $content->title : '----' }}</td>
-                                        <td title="Sub Title">{{ $content->sub_title ? $content->sub_title : '----' }}</td>
                                         <td title="Position">
-                                            {{ $content->position == 'top_banner' ? 'Top Banner' : ($content->position == 'middle_banner' ? 'Middle Banner' : 'Bottom Banner') }}
+                                            {{ ucwords(str_replace("_", " ", $content->position)) }}
                                         </td>
                                         <td title="Manage">
                                             <a href="{{ route('admin.content.edit', $content->id) }}" title="Edit">

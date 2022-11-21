@@ -44,7 +44,7 @@
     <section class="inrBannerSec">
         <div class="container">
             <div class="dFlx spaceBet alignCenter">
-                <div class="servicesLeftText">
+                {{-- <div class="servicesLeftText">
                     <h1>The Blueprint Collective is an <strong>international coalition of equity driven
                             practitioners</strong> supporting organizations
                         and communities to <strong>improve learning opportunities.</strong></h1>
@@ -53,7 +53,8 @@
                         strategies and resources that facilitate effective professional development and transformative
                         educational outcomes for public school students. </p>
 
-                </div>
+                </div> --}}
+                {!! $contentArr['top'] !!}
 
                 <div class="serviceRightImg">
                     <img src="{{ asset('assets/images/service-banner-img.png') }}" alt="">
@@ -82,7 +83,7 @@
                             <div class="content-wrapper">
                                 <div id="w-node-_1a9a55fb-2ade-a43f-3e90-99a9d0199137-43a113a9" class="content">
                                     <h2 class="misionText"><span>Our Services</span></h2>
-                                    <h2 class="text-color-white flex-l"><span
+                                    {{-- <h2 class="text-color-white flex-l"><span
                                             data-w-id="1a9a55fb-2ade-a43f-3e90-99a9d0199139">High Quality Curriculam <span
                                                 class="bold text-yellow">Adaption & Implementation</span> to succeed in
                                             life.</span></h2>
@@ -98,7 +99,8 @@
                                             in hands-on application of conceptual understanding, practice with skills and
                                             fluency and developing multiple solution paths towards mastery. </p>
 
-                                    </div>
+                                    </div> --}}
+                                    {!! $contentArr['our_services'] !!}
                                 </div>
                                 <div class="content-image-wrapper m-t-c1 mobCol">
                                     <img src="{{ asset('assets/images/service-img.png') }}" alt="Services">
@@ -146,7 +148,7 @@
                                 <div class="content-wrapper">
                                     <div id="w-node-_8ec429b0-28a1-767c-7392-27468f62d614-43a113a9" class="content">
                                         <h2 class="eduText"><span>Services</span></h2>
-                                        <h2><span data-w-id="8ec429b0-28a1-767c-7392-27468f62d617">New Educator
+                                        {{-- <h2><span data-w-id="8ec429b0-28a1-767c-7392-27468f62d617">New Educator
                                                 </br><strong class="bold">Development</strong></span></h2>
                                         <div data-w-id="8ec429b0-28a1-767c-7392-27468f62d61d" class="m-v-sm">
                                             <p><span>The Blueprint Collective designs and supports cohorts of new educators
@@ -173,7 +175,8 @@
                                                 <li>Guided Discovery that leads students through a project or active
                                                     questioning to discovery.</li>
                                             </ol>
-                                        </div>
+                                        </div> --}}
+                                        {!! $contentArr['new_educator_development'] !!}
                                     </div>
                                     <div class="content-image-wrapper m-t-c3 mobCol">
                                         <img src="{{ asset('assets/images/service-img2.png') }}" alt="">
@@ -222,7 +225,7 @@
                                 <div class="content-wrapper minus-m-t">
                                     <div id="w-node-_2dc6c98b-dbd7-199c-37eb-e0935be6e3aa-43a113a9" class="content">
                                         <h2 class="eduText"><span>Services</span></h2>
-                                        <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">High school graduate</h2>
+                                        {{-- <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">High school graduate</h2>
                                         <div data-w-id="03586833-ac0b-a312-f808-60505386e17c" class="m-t-medium">
                                             <p><span>The Blueprint approach supports teachers in intellectual preparation of
                                                     their
@@ -264,7 +267,8 @@
                                                 <li>Faculty-wide meetings provide a platform for teachers to ask questions,
                                                     present concerns, and brainstorm amongst their peers.</li>
                                             </ul>
-                                        </div>
+                                        </div> --}}
+                                        {!! $contentArr['high_school_graduate'] !!}
                                     </div>
                                     <div class="content-image-wrapper m-t-c5 mobCol">
                                         <img src="{{ asset('assets/images/service-img3.png') }}" alt="">
@@ -314,7 +318,7 @@
                                 <div class="content-wrapper minus-m-t">
                                     <div id="w-node-_2dc6c98b-dbd7-199c-37eb-e0935be6e3aa-43a113a9" class="content">
                                         <h2 class="misionText"><span style="color: #2e5076;">Our Services</span></h2>
-                                        <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">Special Education
+                                        {{-- <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">Special Education
                                             </br><strong>Support & Guidance</strong></h2>
                                         <div data-w-id="03586833-ac0b-a312-f808-60505386e17c" class="m-t-medium">
                                             <p class="pb20"><span>The Blueprint group supports schools and districts to
@@ -336,7 +340,8 @@
                                                     skilled specialist. The classroom teacher, special educator, or other
                                                     specialist regularly reassess Tier 2 and 3.</span></p>
 
-                                        </div>
+                                        </div> --}}
+                                        {!! $contentArr['special_education'] !!}
                                     </div>
                                     <div class="content-image-wrapper m-t-c5 mobCol">
                                         <img src="{{ asset('assets/images/service-img4.png') }}" alt="">

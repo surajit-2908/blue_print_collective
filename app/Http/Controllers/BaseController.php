@@ -12,13 +12,7 @@ use Storage;
 
 class BaseController extends Controller
 {
-    const PRODUCT_PIC = 'product_image';
-    const PRODUCT_THUMB_PIC = 'product_thumb_image';
-    const PRODUCT_PREVIEW_PIC = 'product_preview_image';
-    const ONLINE_TRAINING_FILE = 'online_training_file';
-    const USER_PIC = 'user_image';
-    const TESTIMONIAL_PIC = 'testimonial_image';
-    const CONTENT_PIC = 'content_image';
+    const TAG_PIC_FOLDER = 'tags_image';
 
     /**
      * update image

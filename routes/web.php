@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\DashboardController as DashboardController;
 use App\Http\Controllers\Admin\ProfileController as ProfileController;
 use App\Http\Controllers\Admin\FeedbackController as FeedbackController;
 use App\Http\Controllers\Admin\ContentController as ContentController;
+use App\Http\Controllers\Admin\AboutTagController as AboutTagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,16 @@ Route::group([
         Route::get('/{page}', [ContentController::class, 'content'])->name('admin.content.listing');
         Route::get('edit/{id}', [ContentController::class, 'contentEdit'])->name('admin.content.edit');
         Route::post('update/{id}', [ContentController::class, 'contentUpdate'])->name('admin.content.update');
+    });
+    Route::post('ckeditor/upload', ['as' => 'ckeditor.upload', 'uses' => 'Admin\ContentController@uploadCkEditorImage']);
+
+    Route::group(['prefix' => 'about-tag'], function () {
+        Route::get('', [AboutTagController::class, 'index'])->name('admin.about.tag');
+        Route::get('add', [AboutTagController::class, 'aboutTagAdd'])->name('admin.about.tag.add');
+        Route::post('insert', [AboutTagController::class, 'aboutTagInsert'])->name('admin.about.tag.insert');
+        Route::get('edit/{id}', [AboutTagController::class, 'aboutTagEdit'])->name('admin.about.tag.edit');
+        Route::post('update/{id}', [AboutTagController::class, 'aboutTagUpdate'])->name('admin.about.tag.update');
+        Route::get('remove/{id}', [AboutTagController::class, 'aboutTagRemove'])->name('admin.about.tag.remove');
     });
 });
 

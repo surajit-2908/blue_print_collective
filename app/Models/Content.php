@@ -11,9 +11,6 @@ class Content extends Model
         'id',
         'page',
         'position',
-        'image',
-        'title',
-        'sub_title',
-        'description',
+        'content',
     ];
 }

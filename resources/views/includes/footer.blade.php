@@ -14,3 +14,16 @@
 <script src="{{ asset('admin/js/datatables.min.js') }}"></script>
 <script src="{{ asset('admin/js/dataTables.bootstrap.min.js') }}"></script>
 <script src="{{ asset('admin/js/datatables-init.js') }}"></script>
+
+<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script>
+    var editor = CKEDITOR.replace('content', {
+        filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token()]) }}",
+        filebrowserUploadMethod: 'form',
+        allowedContent: true
+    });
+    editor.on('required', function(evt) {
+        editor.showNotification('This field is required.', 'warning');
+        evt.cancel();
+    });
+</script>

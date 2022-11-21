@@ -17,10 +17,7 @@ class CreateContentsTable extends Migration
             $table->id();
             $table->string('page')->nullable();
             $table->string('position')->nullable();
-            $table->string('image')->nullable();
-            $table->string('title')->nullable();
-            $table->text('sub_title')->nullable();
-            $table->text('description')->nullable();
+            $table->longText('content')->nullable();
             $table->timestamps();
         });
     }

@@ -8,10 +8,11 @@
         <div class="container">
             <div class="dflex">
                 <div class="dlcol">
-                    <h3>Get in touch </br><strong>with us</strong></h3>
+                    {{-- <h3>Get in touch </br><strong>with us</strong></h3>
                     <p>You may reach us directly via using the contact details provided below.
                         Alternatively, you may complete the form below and someone from our team
-                        will contact you shortly.</p>
+                        will contact you shortly.</p> --}}
+                        {!! $contentArr['top'] !!}
                     <form action="{{ route('save.contact') }}" class="formGroup" method="post" id="myform">
                         @csrf
                         <div class="dflex mb20">

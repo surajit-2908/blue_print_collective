@@ -5,7 +5,7 @@
     <section class="inrBannerSec">
         <div class="container">
             <div class="dFlx spaceBet alignCenter">
-                <div class="inrBnrLeftText">
+                {{-- <div class="inrBnrLeftText">
                     <h1>
                         The Blueprint Collective is an
                         <strong>international coalition of equity driven practitioners</strong>
@@ -22,7 +22,8 @@
                         district-wide efforts to dramatically improve educational outcomes
                         for public school students.
                     </p>
-                </div>
+                </div> --}}
+                {!! $contentArr['top'] !!}
 
                 <div class="inrBnrRightImg">
                     <img src="{{ asset('assets/images/about-banner-pic.png') }}" alt="" />
@@ -42,19 +43,27 @@
             <div class="inrOurMissionHdnArea">
                 <h2><span>Our Mission</span></h2>
 
-                <p>
+                {{-- <p>
                     We drive school improvement through innovative equity centered
                     professional learning, coaching and collaborative problem solving.
                     The Blueprint Collective delivers 360 on demand consulting from our
                     leading educators and provide deeped on in person full day on site
                     support, co facilitation and adult development, curriculum
                     improvement and special education consulting.
-                </p>
+                </p> --}}
+                {!! $contentArr['our_mission'] !!}
             </div>
 
             <div class="inrOurMissionItemArea">
                 <ul class="dFlx spaceBet">
-                    <li>
+                    @foreach ($tags as $tag)
+                        <li>
+                            <img src="{{ asset('storage/tags_image/') . '/' . $tag->image }}" alt="" />
+
+                            <h3>{{ $tag->title }}</h3>
+                        </li>
+                    @endforeach
+                    {{-- <li>
                         <img src="{{ asset('assets/images/inr-our-mission-item-icon1.png') }}" alt="" />
 
                         <h3>High Quality Curriculum adoption and Implementation</h3>
@@ -88,7 +97,7 @@
                         <img src="{{ asset('assets/images/inr-our-mission-item-icon6.png') }}" alt="" />
 
                         <h3>Principal Coaching</h3>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

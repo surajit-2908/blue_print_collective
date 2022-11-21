@@ -69,37 +69,12 @@ class ContentController extends BaseController
         $contentArr = Content::find($id);
 
         $request->validate([
-            'description' => 'required',
-            'image' => 'nullable|mimes:jpeg,png,jpg|max:2048',
+            'content' => 'required',
         ]);
 
-        //upload image
-        $image = $request->image;
-        $filename = $contentArr->image;
-        if ($image) {
-            $uploadedFile = $image;
-            $filename = time() . "." . $uploadedFile->getClientOriginalExtension();
+        $updateArray['content'] = $request->content;
 
-            self::updateImageToStorage($contentArr->image, self::CONTENT_PIC, $uploadedFile, $filename);
-        }
-
-        //upload image
-        $image2 = $request->image2;
-        $filename2 = $contentArr->image2;
-        if ($image2) {
-            $uploadedFile = $image2;
-            $filename2 = time() . rand('1111', '9999') . "." . $uploadedFile->getClientOriginalExtension();
-
-            self::updateImageToStorage($contentArr->image2, self::CONTENT_PIC, $uploadedFile, $filename2);
-            $updateArray['image2'] = $filename2;
-        }
-
-        $updateArray['title'] = $request->title;
-        $updateArray['sub_title'] = $request->sub_title;
-        $updateArray['description'] = nl2br($request->description);
-        $updateArray['image'] = $filename;
-
-        Content::find($id)->update($updateArray);
+        $content = Content::find($id)->update($updateArray);
 
         return redirect()->route('admin.content.listing', $contentArr->page)->with([
             "message" => [

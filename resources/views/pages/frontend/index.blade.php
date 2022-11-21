@@ -40,12 +40,13 @@
         <div class="bnrCaption">
             <div class="container">
                 <div class="bnrCaptionTextArea">
-                    <h2>Finding Smart Solutions to Big Problems Together</h2>
+                    {{-- <h2>Finding Smart Solutions to Big Problems Together</h2>
                     <p>The Blueprint Collective is an international coalition of equity driven practitioners supporting
                         organizations and communities to improve learning opportunities. We work with schools and programs
                         to access curated strategies and resources that facilitate effective professional development and
-                        transformative educational outcomes for public school students.</p>
-                    <p><a href="#">Learn more</a></p>
+                        transformative educational outcomes for public school students.</p> --}}
+                        {!! $contentArr['top_banner'] !!}
+                    <p><a href="{{ route('about') }}">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -69,10 +70,11 @@
                     <img src="{{ asset('assets/images/about-arrow.png') }}" alt="">
                 </div>
                 <div class="rightTextBox">
-                    <p>The Blueprint Collective provides leadership development, curriculum support and instructional
+                    {{-- <p>The Blueprint Collective provides leadership development, curriculum support and instructional
                         coaching to programs, school istricts & professional networks. We serve in communities across the
                         world and work with teams to innovate, tailor and dramatically improve models of learning through
-                        high quality professional development and coaching.</p>
+                        high quality professional development and coaching.</p> --}}
+                        {!! $contentArr['about_section'] !!}
                     <p><a href="{{ route('about') }}">About Blueprint Collective <img
                                 src="{{ asset('assets/images/about-arrow2.png') }}" alt=""></a>
                     </p>
@@ -101,7 +103,7 @@
                     <div class="sticky-wrap">
                         <div class="container">
                             <div class="content-wrapper">
-                                <div id="w-node-_1a9a55fb-2ade-a43f-3e90-99a9d0199137-43a113a9" class="content">
+                                {{-- <div id="w-node-_1a9a55fb-2ade-a43f-3e90-99a9d0199137-43a113a9" class="content">
                                     <h2 class="misionText"><span>Our Mission</span></h2>
                                     <h2 class="text-color-white flex-l"><span
                                             data-w-id="1a9a55fb-2ade-a43f-3e90-99a9d0199139">The BluePrint Collectivve
@@ -116,7 +118,8 @@
                                             education consulting.</p>
                                         <p><a class="linkText" href="#">EXPAND TO LEARN MORE</a></p>
                                     </div>
-                                </div>
+                                </div> --}}
+                                {!! $contentArr['our_mission'] !!}
                                 <div class="content-image-wrapper m-t-c1 mobCol">
                                     <img src="{{ asset('assets/images/our-mission-img.png') }}" alt="our-mission">
                                 </div>
@@ -157,7 +160,7 @@
                         <div data-w-id="16e513b2-5f1b-005d-fce8-43a650216822" class="reveal-wrapper">
                             <div class="container">
                                 <div class="content-wrapper">
-                                    <div id="w-node-_8ec429b0-28a1-767c-7392-27468f62d614-43a113a9" class="content">
+                                    {{-- <div id="w-node-_8ec429b0-28a1-767c-7392-27468f62d614-43a113a9" class="content">
                                         <h2 class="eduText"><span>New Educator Development</span></h2>
                                         <h2><span data-w-id="8ec429b0-28a1-767c-7392-27468f62d617">The Blueprint Collective
                                                 designs and supports cohorts of new educators using highly rated
@@ -175,7 +178,8 @@
                                             </p>
                                             <p><a class="linkText blueText" href="#">EXPAND TO LEARN MORE</a></p>
                                         </div>
-                                    </div>
+                                    </div> --}}
+                                    {!! $contentArr['new_educator_development'] !!}
                                     <div class="content-image-wrapper m-t-c3 mobCol">
                                         <img src="{{ asset('assets/images/educator-dev-img.png') }}" alt="">
                                     </div>
@@ -193,7 +197,7 @@
                                                     src="{{ asset('assets/images/home-img3.png') }}" loading="lazy"
                                                     width="206" alt="" class="image" /></div>
                                             <!-- <div class="content-image _30"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92895f99a1141f_barr-76.png')}}" loading="lazy" width="206" alt="" class="image" /></div>
-                                                        <div class="content-image _28"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289c714a1141b_barr-72.png')}}" loading="lazy" width="206" alt="" class="image" /></div> -->
+                                                                <div class="content-image _28"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289c714a1141b_barr-72.png')}}" loading="lazy" width="206" alt="" class="image" /></div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -220,7 +224,7 @@
                                 <div class="content-wrapper minus-m-t">
                                     <div id="w-node-_2dc6c98b-dbd7-199c-37eb-e0935be6e3aa-43a113a9" class="content">
                                         <h2 class="eduText"><span>Resources</span></h2>
-                                        <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">The bluprit approach
+                                        {{-- <h2 data-w-id="2dc6c98b-dbd7-199c-37eb-e0935be6e3ab">The bluprit approach
                                             <br />support teaches in <br /><span
                                                 data-w-id="f0a5a932-a155-4b3a-184f-86c300f118f2"
                                                 class="text-blue bold">intellectual preparation</span>
@@ -237,7 +241,8 @@
                                                 <li>Observation, Feedback & Practice.</li>
                                                 <li>Real-Time Coaching (RTC)</li>
                                             </ul>
-                                        </div>
+                                        </div> --}}
+                                        {!! $contentArr['resources'] !!}
                                     </div>
                                     <div class="content-image-wrapper m-t-c5 mobCol">
                                         <img src="{{ asset('assets/images/resource-img.png') }}" alt="">
@@ -258,9 +263,9 @@
                                                     src="{{ asset('assets/images/resources-img4.png') }}" loading="lazy"
                                                     width="280" alt="" class="image" /></div>
                                             <!-- <div class="content-image _10"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92899bb6a1143d_barr-101.png')}}" loading="lazy" width="242" alt="" class="image" /></div>
-                                                        <div class="content-image _9"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b3e2a11447_barr-99.png')}}" loading="lazy" width="280" alt="" class="image" /></div>
-                                                        <div class="content-image _12"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92891d0aa1146d_nick-fewings-zF_pTLx_Dkg-unsplash.png')}}" loading="lazy" width="156" alt="" class="image" /></div>
-                                                        <div class="content-image _13"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b0e4a11441_barr-100.png')}}" loading="lazy" width="156" alt="" class="image" /></div> -->
+                                                                <div class="content-image _9"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b3e2a11447_barr-99.png')}}" loading="lazy" width="280" alt="" class="image" /></div>
+                                                                <div class="content-image _12"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f92891d0aa1146d_nick-fewings-zF_pTLx_Dkg-unsplash.png')}}" loading="lazy" width="156" alt="" class="image" /></div>
+                                                                <div class="content-image _13"><img src="https://uploads-ssl.webflow.com/623a5a014f92892442a113aa/623a5a014f9289b0e4a11441_barr-100.png')}}" loading="lazy" width="156" alt="" class="image" /></div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -281,7 +286,7 @@
 
         <div class="container">
             <div class="dFlx spaceBet alignCenter">
-                <div class="middleTextArea">
+                {{-- <div class="middleTextArea">
                     <h3>The Blueprint Collective collaborates with schools and teams through a
                         <strong>variety of mechanisms</strong> based on formal and informal data around
                         <strong>student academic and personal performance</strong>
@@ -303,7 +308,8 @@
 
                     </ul>
 
-                </div>
+                </div> --}}
+                {!! $contentArr['bottom'] !!}
 
                 <div class="rightImgArea">
                     <img src="{{ asset('assets/images/personal-performence-dev-pic.png') }}" alt="">
