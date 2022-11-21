@@ -17,7 +17,7 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="form-group">
                             <label>Position</label>
-                            <input type="text" class="form-control" value="{{ $dataArr['contentArr']->position }}" />
+                            <input type="text" class="form-control" value="{{ ucwords(str_replace("_", " ", $dataArr['contentArr']->position)) }}" readonly />
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12">
