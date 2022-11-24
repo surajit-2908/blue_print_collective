@@ -30,10 +30,10 @@
             <li class="{{ $controller_name == 'ContentController' ? 'active' : '' }}">
                 <a href="{{ route('admin.content') }}"><i class="fa fa-file"></i> <span>Manage Content</span></a>
             </li>
-            {{-- <li class="{{ $controller_name == 'FeedbackController' ? 'active' : '' }}"><a
+            <li class="{{ $controller_name == 'FeedbackController' ? 'active' : '' }}"><a
                     href="{{ route('admin.feedback') }}"><i class="fa fa-comments"></i> <span>Feedback</span></a>
             </li>
-            <li class="{{ $controller_name == 'AboutTagController' ? 'active' : '' }}"><a
+            {{-- <li class="{{ $controller_name == 'AboutTagController' ? 'active' : '' }}"><a
                     href="{{ route('admin.about.tag') }}"><i class="fa fa-tag"></i> <span>About Tags</span></a>
             </li> --}}
 
