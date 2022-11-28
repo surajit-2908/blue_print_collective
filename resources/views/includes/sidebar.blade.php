@@ -24,18 +24,18 @@
             <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }}"><a href="{{ route('admin.dashboard') }}"><i
                         class="fa fa-dashboard"></i> <span>Dashboard</span></a>
             </li>
-            {{-- <li class="{{ Route::is('admin.settings') ? 'active' : '' }}"><a href="{{ route('admin.settings') }}"><i
+            <li class="{{ Route::is('admin.settings') ? 'active' : '' }}"><a href="{{ route('admin.settings') }}"><i
                         class="fa fa-gear"></i> <span>Settings</span></a>
-            </li> --}}
+            </li>
             <li class="{{ $controller_name == 'ContentController' ? 'active' : '' }}">
                 <a href="{{ route('admin.content') }}"><i class="fa fa-file"></i> <span>Manage Content</span></a>
             </li>
             <li class="{{ $controller_name == 'FeedbackController' ? 'active' : '' }}"><a
                     href="{{ route('admin.feedback') }}"><i class="fa fa-comments"></i> <span>Feedback</span></a>
             </li>
-            {{-- <li class="{{ $controller_name == 'AboutTagController' ? 'active' : '' }}"><a
+            <li class="{{ $controller_name == 'AboutTagController' ? 'active' : '' }}"><a
                     href="{{ route('admin.about.tag') }}"><i class="fa fa-tag"></i> <span>About Tags</span></a>
-            </li> --}}
+            </li>
 
         </ul>
     </div>
